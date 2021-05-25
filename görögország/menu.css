@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap');
+
+body{
+	
+	font-family: 'Cinzel Decorative', cursive;
+	background: radial-gradient(
+			circle at 50% 0,
+			#fff 0,
+			#fff 0.2in,
+			rgb(1, 134, 211) 0,
+			rgb(1, 134, 211) 0.4in,
+			#fff 0,
+			#fff 0.6in,
+			rgb(1, 134, 211) 0,
+			rgb(1, 134, 211) 0.8in,
+			#fff 0,
+			#fff 1.2in
+		),
+		#fff;
+	background-size: 1.4in 100%;
+	background-position: 50% 0;
+	background-repeat: repeat-x;
+}
+
+
+
+
+h1{
+	color: rgb(85, 83, 83);
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 0;
+	letter-spacing: 3px;
+	
+}
+
+nav {
+	
+	background: rgb(255, 255, 255);
+	height: 100%;
+    float: none;
+	text-align:center ;
+	top: 0;
+    left: 0;
+	right: 0; 
+	bottom: 0;
+	
+}
+
+nav ul {
+	text-align: center;
+	margin-top: 5%;
+	padding: 3px;
+	list-style: none;
+
+}
+
+nav a {
+	
+	border-bottom: rgb(54, 175, 245) solid 1.5px ;
+	border-collapse: separate;
+	color: rgb(95, 95, 95);
+	font-weight:bold;
+	text-decoration: none;
+	padding: 20px 0;
+	display: block;
+	font-family: 'Cinzel', serif;
+	letter-spacing: 1px;
+}
+nav a:hover {
+	padding: 15px;
+	background: rgb(54, 175, 245) ;
+	color: whitesmoke;
+	
+}
+
+li:hover{
+	border-left: whitesmoke solid 3px;
+}
+
+
+@media screen and (max-width: 1400px){
+	nav ul{
+		margin-top: 13%;
+	}
+	h1{
+		margin-top: 45%;
+	}
+
+
+
+}
+

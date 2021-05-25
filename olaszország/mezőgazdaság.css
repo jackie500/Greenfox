@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@100&display=swap');
+/*görgető*/
+
+::-webkit-scrollbar{
+    width: 15px;
+    height: 0px;
+
+}
+
+
+::-webkit-scrollbar-track{
+    background-color: rgb(135, 139, 145);
+    border: 4px solid rgb(128, 124, 124);
+    box-shadow: inset  0 0 0px 2px  rgba(100, 183, 238, 0);
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+        transparent,
+        #0b81c5,
+        #054970
+    );
+    border-radius: 10px;
+    
+}
+::-webkit-scrollbar-thumb:hover{
+
+    background:linear-gradient(
+        transparent,
+        #1abde6,
+        #054691
+    );
+    border-radius: 10px;
+    
+}
+/* body */
+
+body{
+    
+    min-width: 470px;
+    margin: 0;
+    font-family:'Roboto', sans-serif;
+    background:url('mezőgazd.háttér.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    
+}
+
+*{
+    box-sizing: border-box
+}
+
+
+/* fel nyíl */
+
+.fel{   
+    text-align: center; 
+}
+
+.fa-arrow-circle-up{
+    color: rgba(78, 120, 128, 0.822);
+    font-size: 84px; 
+    text-align: center;
+    
+}
+.fa-arrow-circle-up:hover{
+    color: rgb(43, 114, 138);
+    font-size: 86px; 
+    text-align: center;
+    
+}
+
+
+
+
+/* wrapper */
+
+.wrapper{
+    max-width: 1000px;
+    
+    margin: 0px auto;
+    
+}
+
+/* header */
+
+header{
+    background: url('negyedik.jpg')no-repeat;
+    background-position:50% 100% ;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 600px;
+    
+    
+    
+    
+    
+}
+/* cím */
+.cím{
+    border-color: rgb(0, 0, 0, 2px 2px 2px);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 50px;
+
+}
+/* bar */
+
+.bar{
+    color: white;
+    background-color: rgb(45, 93, 156);
+    text-decoration: none;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-right: 17px;
+    padding-left: 17px;
+    display: none;
+    font-size: 18px;
+    float: right;
+    
+}
+
+/* italy felirat */
+
+.italy{
+    
+    margin: 0px 100px 0px 10px;
+    font-size: 60px;
+    font-family: 'Lovers Quarrel', cursive;
+    line-height: 60px;
+    display: inline;
+    float:right ;
+    color: rgb(223, 190, 2);
+    letter-spacing: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: auto;
+    padding-right: 300px;
+
+    
+    
+}
+
+/* manü aláhuzások */
+
+.active{
+    background-color: #054970;
+    border: goldenrod solid 2px;
+    border-bottom: goldenrod solid 4px;
+}
+
+.gazd{
+    border-bottom: rgb(18, 219, 0) solid 6px;
+}
+.égh{
+    border-bottom: white solid 6px;
+}
+.gaszt{
+    border-bottom: red solid 6px;
+}
+
+/* menü elrendezés */
+
+nav {
+    background: rgb(45, 93, 156);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;    
+    
+}
+
+nav::after{
+    content:'';
+    clear: both;
+    display: table;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 17px;
+    padding-left: 17px;
+    display: block;
+    font-size: 18px;
+}
+
+nav a:hover{
+    background: rgb(4, 70, 109);
+    border-radius: 2px;
+}
+
+
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav .has-submenu {
+    position: relative;
+}
+
+nav .has-submenu:hover .submenu {
+    
+    display: block;
+    position: absolute;
+}
+
+nav .has-submenu::after {
+    content:'🢓';
+    color: white;
+    position: absolute;
+    top: 23px;
+    right: 10px;
+}
+
+nav .has-submenu > a {
+    padding-right: 33px;
+    
+}
+
+
+
+
+nav .submenu {
+    position: absolute;
+    width: 180px;
+    display: none;
+}
+
+nav .submenu a {
+    background: rgb(45, 93, 156);
+    padding: 10px 20px;
+}
+
+nav .submenu a:hover {
+    background:rgb(4, 70, 109);
+    padding: 10px 20px;
+}
+
+/* tartalom */
+
+main{
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    font-size: 25px;
+}
+
+main p {
+    line-height: 1.5;
+}
+
+main h1 {
+    margin-top: 0;
+    
+}
+
+/* képek */
+
+.olaj{
+    margin-top: 10px;
+    width: 500px;
+    height: 300px;
+    
+    
+    
+    
+}
+
+.mandula{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    
+    
+
+}
+
+.juh{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    
+    
+}
+
+.csirke{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+
+}
+
+@media screen and (max-width: 992px){
+
+    .italy{
+        
+        
+        display: none;  
+        
+    }
+}
+
+@media screen and (max-width: 412px){
+
+    body{
+        min-width: 360px;
+    }
+
+    main{
+        padding-right: 20px;
+        margin-right: 0;
+        padding-left: 13px; 
+    }   
+    .cím{
+        
+        font-size: 35px;
+         
+    }   
+      
+
+}
+
+
+    
+
+
+@media screen and (max-width: 578px){
+    
+    
+    .olaj{
+        margin-top: 20px;
+        width: 280px;
+        height: 180px;
+        
+    }
+    .mandula{
+        margin-top: 20px;
+        width: 280px;
+        height: 180px;
+        
+    }
+    .juh{
+        margin-top: 20px;
+        width: 280px;
+        height: 180px;
+        
+    }
+    .csirke{
+        margin-top: 20px;
+        width: 280px;
+        height: 180px;
+        
+    }
+
+
+
+    .bar{
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 80px;
+        max-width: 100%;
+        text-align:center ;
+        
+        float: left;
+        display: flex;
+        font-size: 40px;
+         
+}
+
+
+
+nav .has-submenu::after {
+    content:none;
+    color: white;
+    position: absolute;
+    top: none;
+    right: none;
+}
+
+
+nav {
+	background: rgb(45, 93, 156);
+	width: none;
+    float: none;
+	text-align:center ;
+	top: 0;
+    left: 0;
+	right: 0; 
+    bottom: 0;
+    position: relative;
+	
+}
+
+
+
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: none;
+	display: none;
+}
+
+
+}
+
+
